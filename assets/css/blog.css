@@ -95,7 +95,7 @@
 	box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 
-.-footer .btn:hover{
+.footer .btn:hover{
 	border: 1px solid #1e74f4;
 	background-color: white !important;
 	color: blue;
@@ -127,6 +127,10 @@
 	background-color: #1e74f4;
 	color: #fff;
 	
+}
+
+.jumbotron{
+	background-color: blue;
 }
 
 	}
