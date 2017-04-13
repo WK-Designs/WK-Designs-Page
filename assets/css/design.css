@@ -99,7 +99,7 @@
   .panel:hover {
       box-shadow: 5px 0px 40px rgba(0,0,0, .2);
   }
-  .panel-footer .btn:hover {
+  .panel-footer .btn-buy:hover {
       border: 1px solid #1e74f4;
       background-color: #fff !important;
       color: #1e74f4;
@@ -119,12 +119,14 @@
   }
   .panel-footer h3 {
       font-size: 32px;
+      color: black;
+      
   }
   .panel-footer h4 {
       color: #aaa;
       font-size: 14px;
   }
-  .panel-footer .btn {
+  .panel-footer .btn-buy {
       margin: 15px 0;
       background-color: #1e74f4;
       color: #fff;
@@ -158,19 +160,16 @@
       color: #1e74f4;
   }
 
-.slideanim {visibility:hidden;}
+.slideanim {visibility: hidden;}
 .slide {
-    /* The name of the animation */
     animation-name: slide;
-    -webkit-animation-name: slide; 
-    /* The duration of the animation */
+    -webkit-animation-name: slide;
+
     animation-duration: 1s; 
     -webkit-animation-duration: 1s;
-    /* Make the element visible */
+
     visibility: visible; 
 }
-
-/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
 @keyframes slide {
     0% {
         opacity: 0;

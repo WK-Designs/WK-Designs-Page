@@ -10,18 +10,23 @@
 	<meta name="keywords" content="Web Design,Visitenkarten,Werbebanner,Logo">
 	<meta name="author" content="Waldemar Kornilov">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!--Stylesheets-->
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/design.css">
+	
+	<!--Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="assets/css/design.css">
+	
 	<!--Scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="script/smooth_scroll.js"></script>
+	<script src="script/slide_in_anim.js"></script>
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -214,8 +219,8 @@
 			<h4>Wählen sie unsere Variation aus</h4>
 		</div>
 
-		<div class="row slideanim">
-		  <div class="col-sm-4 col-xs-12" >
+		<div class="row">
+		  <div class="col-sm-4 col-xs-12 slideanim">
 		 	<div class="panel panel-default text-center">
 				<div class="panel-heading">
 					<h1>Einfach</h1>
@@ -229,12 +234,12 @@
 					<div class="panel-footer">
 						<h3>299€*</h3>
 						<h4><strong>Einmalig</strong></h4>
-						<button class="btn btn-lg">Anmelden</button>
+						<button class="btn-buy btn-lg">Anmelden</button>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-sm-4 col-xs-12">
+			<div class="col-sm-4 col-xs-12 slideanim">
 				<div class="panel panel-default text-center">
 					<div class="panel-heading">
 						<h1>Klein Unternehmen</h1>
@@ -248,12 +253,12 @@
 					<div class="panel-footer">
 						<h3>499€*</h3>
 						<h4><strong>Einmalig</strong></h4>
-						<button class="btn btn-lg">Anmelden</button>
+						<button class="btn-buy btn-lg">Anmelden</button>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-sm-4 col-xs-12">
+			<div class="col-sm-4 col-xs-12 slideanim">
 				<div class="panel panel-default text-center">
 					<div class="panel-heading">
 						<h1>Premium</h1>
@@ -267,11 +272,11 @@
 					<div class="panel-footer">
 						<h3>1199€*</h3>
 						<h4><strong>Einmalig</strong></h4>
-						<button class="btn btn-lg">Anmelden</button>
+						<button class="btn-buy btn-lg">Anmelden</button>
 					</div>
 				</div>
 			</div>
-				<div class="mwst text-center">
+				<div class="mwst text-center slideanim">
 					<p>* Alle Preise sind ohne Mehrwertsteuer. Da wir gesetzlich keine Mehrwertsteuer verlangen können.</p>
 				</div>
 		</div>
@@ -312,19 +317,5 @@
 			<p> Erstellt von <strong><a href="#" title="Besuche WK-Designs">WK-Designs</a></strong></p>
 		</footer>
 	<!--Footer-->
-	
-	<script>
-	$(window).scroll(function() {
-	  $(".slideanim").each(function(){
-    	var pos = $(this).offset().top;
-
-    	var winTop = $(window).scrollTop();
-    		if (pos < winTop + 600) {
-      		$(this).addClass("slide");
-    		}
-  		});
-	});
-	</script>
-
 </body>
 </html>
