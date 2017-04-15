@@ -1,0 +1,14 @@
+// Platzieren Sie Ihre Einstellungen in dieser Datei, um Standard- und Benutzereinstellungen zu überschreiben.
+{
+    "evermonkey.token": "S=s513:U=5a75c37:E=162c60ba02e:C=15b6e5a7268:P=1cd:A=en-devtoken:V=2:H=e6fa3922a5a31a1bab5dd4a48d3fcba5",
+
+    "evermonkey.noteStoreUrl": "https://www.evernote.com/shard/s513/notestore",
+
+    "editor.minimap.enabled": true,
+
+    "editor.minimap.renderCharacters": false,
+
+    "editor.dragAndDrop": true
+
+    
+}
