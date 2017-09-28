@@ -1,7 +1,10 @@
-  body {
+img {max-width : 100%; height: auto}
+
+body {
       font: 400 15px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
+      /*background-color: #aaa;*/
    }
   .navbar {
       margin-bottom: 0;
@@ -34,11 +37,11 @@
   h1{
       color: white;
      }
-
+     
   h2 {
       font-size: 24px;
       text-transform: uppercase;
-      color: #303030;
+      color: white;
       font-weight: 600;
       margin-bottom: 30px;
      }
@@ -58,7 +61,9 @@
       font-family: Montserrat, sans-serif;
 	  /*box-shadow: 1px 1px 15px 5px #818181;*/
       transform: rotate(3deg);
-      
+      margin-left: -50px;
+      margin-right: -50px;
+      margin-top: auto;
      }
 
   .btn-abo {
@@ -71,11 +76,73 @@
 	  border-color: #003d99;
    }
 
+   .ueberuns {
+       background-color: #aaa;
+       transform: rotate(3deg);
+       margin-left: -50px;
+       margin-right: -50px;
+       margin-bottom: auto;
+       margin-top: -30px;
+   }
+
+   .ueberuns .col-sm-4 .glyphicon {
+       margin-left: 110px;
+       margin-top: 50px;
+   }
+
+   .ueberuns .row .col-sm-8 h2{
+       margin-left: 30px;
+   }
+
+   .ueberuns .row .col-sm-8 h4{
+       margin-left: 50px;
+       margin-right: 30px;
+   }
+
+   .ueberuns .row .col-sm-8 p {
+       margin-left: 55px;
+       margin-right: 30px;
+   }
+
+   .ueberuns .row .col-sm-8 button{
+       margin-left: 55px;
+   }
+
+   .ziel {
+       background-color: #aaa;
+       transform: rotate(3deg);
+       margin-left: -50px;
+       margin-right: -50px;
+       margin-bottom: auto;
+   }
+
+   .ziel .row .col-sm-4 .glyphicon{
+       margin-left: 50px;
+       margin-top: 120px;
+   }
+
+   .ziel .row .col-sm-8 h2{
+       margin-left: -50px;
+   }
+
+   .ziel .row .col-sm-8 h4{
+       margin-left: -30px;
+       margin-right: 30px;
+   }
+
+   .ziel .row .col-sm-8 p{
+       margin-left: -25px;
+       margin-right: 30px;
+   }
+
   .leistung{
       background-color: #6da5ff;
       /*box-shadow: 1px 1px 15px 5px #818181;*/
       transform: rotate(3deg);
+      margin-left: -50px;
+      margin-right: -50px;
    }
+
 
   .container-fluid {
       padding: 60px 50px;
@@ -93,81 +160,8 @@
       color: white;
    }
 
-   .col-sm-4 .glyphicon-wrench {
-      animation: spin-wrench 2s linear infinite
-   }
-   @keyframes spin-wrench{
-       0% {transform: rotate(25deg);
-       }
-       50%{transform: rotate(50deg);
-       }
-       100%{transform: rotate(25deg);
-       }
-   }
-
-   .col-sm-4 .glyphicon-heart {
-      animation: zoom-heart .5s ease-in-out infinite;
-   }
-   @keyframes zoom-heart{
-       0%{transform: scale(1.1);
-       }
-       50%{transform: scale(1.3);
-       }
-       100%{transform: scale(1.1);
-       }
-   }
-
-   .col-sm-4 .glyphicon-certificate {
-      animation: spin-certificate 5s infinite linear;
-   }
-
-   @keyframes spin-certificate {
-       0% {transform: rotate(0deg);
-           -webkit-transform: rotate(0deg);
-       }
-       100% {transform: rotate(360deg);
-            -webkit-transform: rotate(360deg);
-       }
-   }
-
   .ueberuns .glyphicon, .ziel .glyphicon{
-      color: #1e74f4;
-   }
-
-  .glyphiconanim {
-      -webkit-animation: spin 2s infinite linear;
-      -moz-animation: spin 2s infinite linear;
-      -o-animation: spin 2s infinite linear;
-      animation: spin 24s infinite linear ; 
-   }
-    @-moz-keyframes spin{
-       0% {-moz-transform: rotate(0deg);
-       }
-       100% {-moz-transform: rotate(360deg);
-       }
-    }
-
-    @-webkit-keyframes spin{
-       0% {-webkit-transform: rotate(0deg);
-       }
-       100% {-webkit-transform: rotate(360deg);
-       }
-    }
-
-    @-o-keyframes spin{
-       0% {-o-transform: rotate(0deg);
-       }
-       100% {-o-transform: rotate(360deg);
-       }
-    }
-    
-   @keyframes spin {
-       0% {transform: rotate(0deg);
-           -webkit-transform: rotate(0deg);
-       }
-       100% {transform: rotate(360deg);
-            -webkit-transform: rotate(360deg);
-       }
+      color: #1e74f4;  
    }
 
   .logo-small {
@@ -180,10 +174,26 @@
       font-size: 200px;
    }
 
+  .portfolio{
+      background-color: #aaa;
+      transform: rotate(3deg);
+      margin-left: -50px;
+      margin-right: -50px;
+  }
+  .portfolio .row{
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
   .thumbnail {
       padding: 0 0 15px 0;
       border: none;
       border-radius: 0;
+      background: none;
+   }
+
+   .thumbnail p, .thumbnail h3{
+        color: white;
    }
 
   .thumbnail img {
@@ -196,6 +206,13 @@
       background-color: #6da5ff;
       /*box-shadow: 1px 1px 15px 5px #818181;*/
       transform: rotate(3deg);
+      margin-left: -50px;
+      margin-right: -50px;
+      margin-top: -30px;
+   }
+
+   .feedback .carousel {
+       margin-top: -40px;
    }
 
   .carousel-control.right, .carousel-control.left {
@@ -232,21 +249,14 @@
        margin-bottom: -1px
    }
 
-   .preise h2 {
-       color: white;
-       transform: rotate(0deg);
-   }
-
-   .preise .preis-ohne-cms, .preis-mit-cms{
-       transform: rotate(-3deg);
-   }
-
-   .preis-mit-cms .row{
-       margin-left: 25px;
+  .preis-mit-cms .row{
+       margin-left: 50px;
+       margin-right: auto;
    }
 
    .preis-ohne-cms .row{
-       margin-right: 25px;
+       margin-left: 50px;
+       margin-right: auto;
    }
 
   .panel {
@@ -256,9 +266,9 @@
       transition: box-shadow .5s;
    }
 
-  .panel:hover {
+  /*.panel:hover {
       box-shadow: 3px 0px 25px #818181;
-   }
+   }*/
 
    .panel-heading {
       color: #fff !important;
@@ -277,7 +287,6 @@
    }
    .panel-body {
        border-bottom: 1px solid white;  
-
    }
 
   .panel-footer-btn-buy .btn-buy {
@@ -307,22 +316,28 @@
       color: #1e74f4;
    }
 
+   .googlemap{
+       margin-left: -400px;
+   }
+
    .kontakt{
        background-color: #1e74f4;
        /*box-shadow: 1px 1px 15px 5px #818181;*/
        transform: rotate(3deg);
-       overflow: hidden;
-       height: auto;
-       width: auto;
+       margin-left: -50px;
+       margin-right: -50px;
+       margin-bottom: -10px;
    }
-
-   .kontakt .googlemap, .kontakt-text, h2{
-       transform: rotate(-3deg);
-   } 
 
    .kontakt .col-sm-5 {
        color: white;
    }
+
+   /*.kontakt .googlemap {
+    margin-left: auto;
+    margin-top: -5px;
+    margin-right: auto;
+   }*/
 
   footer .glyphicon {
       font-size: 20px;
@@ -330,7 +345,15 @@
       color: #1e74f4;
    }
 
-.slideanim-1 {visibility: hidden; }
+   .footer-1{
+       color: white;
+       transform: rotate(3deg);
+       margin-left: -50px;
+       margin-right: -50px;
+       background-color: #aaa;
+   }
+
+/*.slideanim-1 {visibility: hidden; }
     .slide1 {
     animation-name: slide1;
     -webkit-animation-name: slide1;
@@ -361,8 +384,9 @@
      }
  }
 
-.slideanim-2 {visibility: hidden; }
-    .slide2 {
+.slideanim-2 {visibility: hidden; }*/
+    
+/*.slide2 {
     animation-name: slide2;
     -webkit-animation-name: slide2;
 
@@ -390,4 +414,4 @@
         opacity: 1;
         -webkit-transform: translateY(0%);
      }
- }
+ }*/
